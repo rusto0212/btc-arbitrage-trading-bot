@@ -1,7 +1,5 @@
 # Bitcoin Arbitrage Trading Bot
 
-<a href="https://www.buymeacoffee.com/mammuth" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-
 A python monitoring and trading bot which exploits price-spreads between different cryptocurrency exchanges.
 
 <img width="1235" alt="bitcoin-arbitrage-trading-bot" src="https://user-images.githubusercontent.com/3121306/46918330-4ce52400-cfd1-11e8-8c30-1c6dd0758e04.png">
@@ -14,7 +12,7 @@ A python monitoring and trading bot which exploits price-spreads between differe
 - Notifications on spread thresholds (eg. spreads of > 200€) via different notification channels (eg. Pushbullet, Mail, ...)
 - Automated trading for configured spread thresholds (partly implemented)
 - Storing of historical spreads and making them available via a web UI
-- Highly [configurable](https://github.com/mammuth/bitcoin-arbitrage-trading-bot/blob/master/bitcoin_arbitrage/monitor/settings_sample.py) (currency pairs, thresholds for each notification channel or trading, historical data, ...)
+- Highly configurable (currency pairs, thresholds for each notification channel or trading, historical data, ...)
 
 ## Trading Strategy
 The following example explains *spreads* between exchanges:
@@ -95,17 +93,17 @@ The strategy worked during the *crypto boom* at the end of 2017 (with spreads of
 
 # Developer Information
 
-The bot itself is placed at [bitcoin_arbitrage/monitor](https://github.com/mammuth/bitcoin-arbitrage/blob/master/bitcoin_arbitrage/monitor/monitor.py) with its entry point / main class being [bitcoin_arbitrage/monitor/monitor.py](https://github.com/mammuth/bitcoin-arbitrage/blob/master/bitcoin_arbitrage/monitor/monitor.py).
+The bot itself is placed at bitcoin_arbitrage/monitor with its entry point / main class being bitcoin_arbitrage/monitor/monitor.py.
 
 The code within `bitcoin_arbitrage/` is a Flask app which is just a *fancy* wrapper for the monitor/bot with a web UI.
 
-Configuration of the bot is done by copying the [settings.py](https://github.com/mammuth/bitcoin-arbitrage/blob/master/bitcoin_arbitrage/monitor/settings_sample.py) file.
+Configuration of the bot is done by copying the settings.py file.
 
 ### Running locally
 
 Requirements:
 - python >= 3.6
-- [pipenv](https://github.com/pypa/pipenv) (install via `pip install pipenv`)
+- pipenv (install via `pip install pipenv`)
 
 Run the monitor:
 - `pipenv install` - Install requirements
