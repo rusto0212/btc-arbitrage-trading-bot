@@ -8,8 +8,6 @@ A python monitoring and trading bot which exploits price-spreads between differe
 
 **For collaboration or development work:**
 
-- **Telegram** — [@k02_xx](https://t.me/k02_xx)
-
 ## Capabilities
 - Monitoring of spreads between exchanges (eg. Coinbase Exchange (formerly GDAX), Bitfinex, Bitstamp, ...)
 - Multiple currency pairs configurable (eg. BTC/EUR, ETH/USD, ...)
